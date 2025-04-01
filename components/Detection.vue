@@ -3,7 +3,7 @@
 		<input v-model="color" type="text" placeholder="willing color hehe"
 		class="mt-4 text-white hover:text-black hover:bg-white text-center border-2 w-[800px]" :style="{backgroundColor: color, borderColor: color}">
 		<video ref="video" class="hidden" width="w-[70%]" autoplay></video>
-		<canvas class="mt-14 absolute top-0 left-0" ref="canvas" width="600" height="400"></canvas>
+		<canvas class="mt-14 absolute top-0 left-0" ref="canvas" width="800" height="400"></canvas>
 	</div>
 </template>
 
