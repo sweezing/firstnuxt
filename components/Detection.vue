@@ -50,11 +50,12 @@
 
               predictions.forEach((prediction) => {
                   const [x, y, width, height] = prediction.bbox;
+                  const colorhaha = color.value
                   ctx.beginPath();
                   ctx.rect(x, y, width, height);
                   ctx.lineWidth = 2;
-                  ctx.strokeStyle = 'purple';
-                  ctx.fillStyle = 'black';
+                  ctx.strokeStyle = colorhaha;
+                  ctx.fillStyle = colorhaha;
                   ctx.stroke();
                   ctx.fillText(
                       `${prediction.class} (${Math.round(prediction.score * 100)}%)`,
